@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 dotenv.config();
 const { exceptionHandler } = require('./utils/exceptions/exception-handler');
+const notificationsRoutes = require('./routes/notification-routes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
